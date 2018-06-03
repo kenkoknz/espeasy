@@ -1,0 +1,3 @@
+using mqtt with esp:
+topic: /<espname>/<device name>/<value name>;  e.g /ESP02/Relay_01/RL_01  (under device; edit)
+
