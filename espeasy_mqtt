@@ -1,3 +1,6 @@
 using mqtt with esp:
-topic: /<espname>/<device name>/<value name>;  e.g /ESP02/Relay_01/RL_01  (under device; edit)
+few brokers available:
+
+
+topic: /<espname>/<device name>/<value name>;  e.g refer espmenu: /kkesp01/swgpio 0/RL_01/Switch  (under device; edit)
 
