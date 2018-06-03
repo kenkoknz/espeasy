@@ -15,4 +15,6 @@ Controller Password:
 Sensor Delay:	10
 Sleep Mode:	
 
-topic: /<espname>/<device name>/<value name>;  e.g refer espmenu: /kkesp01/swgpio 0/RL_01/Switch  (under device; edit)
+topic structure: /<espname>/<device name>/<value name>;  e.g refer espmenu: /kkesp01/swgpio 0/Switch  (under device; edit)
+
+mqtt topic viewer: https://www.hivemq.com/mqtt-toolbox ; e.g mqttbox, chrome extension
