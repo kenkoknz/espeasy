@@ -1,6 +1,18 @@
 using mqtt with esp:
-few brokers available:
+few brokers available: e.g broker.hivemq.com port 1883 is simple to use
 
+Config menu e.g 
+SSID:hg566
+WPA Key:********
+WPA AP Mode Key:configesp
+Unit nr:1
+Protocol:	OpenHab MQTT
+Locate Controller: Use Hostname	
+Controller Hostname: broker.hivemq.com
+Controller Port:1883
+Controller User:	
+Controller Password:	
+Sensor Delay:	10
+Sleep Mode:	
 
 topic: /<espname>/<device name>/<value name>;  e.g refer espmenu: /kkesp01/swgpio 0/RL_01/Switch  (under device; edit)
-
