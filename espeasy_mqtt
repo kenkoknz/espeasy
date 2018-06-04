@@ -28,5 +28,7 @@ use node red: https://diyprojects.io/esp-easy-mqtt-node-red-bi-directional-commu
 
 video to connect to mqtt: https://www.youtube.com/watch?v=8CuD6YBdACs&feature=youtu.be
 
+note: for output, no need to define device
+
 
 
