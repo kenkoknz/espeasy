@@ -1,5 +1,5 @@
 using mqtt with esp:
-few brokers available: e.g broker.hivemq.com port 1883 is simple to use
+few brokers available: e.g broker.hivemq.com port 1883 is simple to use; iot.eclipse.org
 
 Config menu e.g 
 SSID:hg566
@@ -12,9 +12,16 @@ Controller Hostname: broker.hivemq.com
 Controller Port:1883
 Controller User:	
 Controller Password:	
-Sensor Delay:	10
+Sensor Delay:	10s with 
 Sleep Mode:	
 
-topic structure: /<espname>/<device name>/<value name>;  e.g refer espmenu: /kkesp01/swgpio 0/Switch  (under device; edit)
+this will update every 10 
+
+
+topic structure: /<espname>/<task name>/<value name>;  e.g refer espmenu: /kkesp01/swgpio 0/Switch  (under device; edit)
 
 mqtt topic viewer: https://www.hivemq.com/mqtt-toolbox ; e.g mqttbox, chrome extension
+use node red: https://diyprojects.io/esp-easy-mqtt-node-red-bi-directional-communication-dashboard/#.WxRz2O6FN0w
+
+
+
