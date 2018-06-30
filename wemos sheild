@@ -1,0 +1,36 @@
+
+For the sheild in r120:
+
+select ssd1306
+
+SDA 	GPIO-4 	D2
+SCK 	GPIO-5 	D1
+
+i2c scan in tools will pick up i2c devices and adrr
+
+offset 4 spaces before text
+
+only 6 lines
+
+type plain text will be displayed as is
+
+
+display data:
+
+   
+   %systime%: hour system. If you checked Use NTP, the ESP8266 is set to from the internet automatically at startup time.
+   
+   %ip%: ip address of the module
+   
+   %uptime%: uptime since boot
+
+retrieve the value of a variable of any Device like this:
+
+[NameDuDevice#NameValueX] 
+
+e.g [temp1#temperature] C
+
+
+
+
+
