@@ -68,15 +68,30 @@ msg.topic = "/wemos22/cmd";
 msg.payload="oled,0,0,hello world";
 return msg;
 video to connect to mqtt: https://www.youtube.com/watch?v=8CuD6YBdACs&feature=youtu.be
+------------------------------------------------
+*****control esp with mqtt  ie publish***** 
+
+e.g: to turn gpio 1 on or off; 
+
+publish topic:  /kkesp01/cmd with message: gpio,1,0
+
+
+e.g to send msg to oled; \
+
+/kkwemos2/cmd/  with msg payload: oled,3,1,hello kk 
 
 ------------------------
+
+
+---------------
 note: for output, no need to define device
 
 eg with black esp01 the blue wifi led is on gpio1 and inverted
 
-to turn on the blue led; publish: /kkesp01/gpio/1 with message 0 to turn on
+to turn on the blue led; publish: /kkesp01/gpio/1 with message 0 to turn on or publish /kkesp01/cmd with msg gpio,1,1
 
-to turn on using http: http://192.168.20.15/control?cmd=GPIO,1,1
+to turn on using http: http://192.168.20.15/control?cmd=GPIO,1,1 or publish /kkesp01/cmd with msg gpio,1,0
+
 
 ----------------------------------------------
 
