@@ -1,3 +1,4 @@
+wemos oled
 
 For the sheild in r120:
 
@@ -29,6 +30,13 @@ retrieve the value of a variable of any Device like this:
 [NameDuDevice#NameValueX] 
 
 e.g [temp1#temperature] C
+
+----------------
+in mega v2
+
+select  64x32; or 128x32 with offset, can see ip
+
+
 
 
 
