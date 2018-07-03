@@ -30,9 +30,12 @@ e.g system, %ip% etc
 
 ------------------------------
 
+Subscribe:
+
 topic structure: /<espname>/<task name>/<value name>;  e.g refer espmenu: /kkesp01/swgpio 0/Switch  (under device; edit)
 ------------------------------------
 mqtt topic viewer: https://www.hivemq.com/mqtt-toolbox ; e.g mqttbox, chrome extension
+
 use node red: https://diyprojects.io/esp-easy-mqtt-node-red-bi-directional-communication-dashboard/#.WxRz2O6FN0w
 
 ------------------------------------------
