@@ -38,6 +38,8 @@ use node red: https://diyprojects.io/esp-easy-mqtt-node-red-bi-directional-commu
 ------------------------------------------
 to use commands with mqtt:
 
+<MQTT subscribe/publish template>/cmd with payload: <command>
+
 set the "Topic" entry of the MQTT node to... /<node_name>/cmd
 
 e.g. /wemos22/cmd
