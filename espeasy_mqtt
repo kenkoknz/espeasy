@@ -2,6 +2,8 @@ using mqtt with esp:
 few brokers available: e.g broker.hivemq.com port 1883 is simple to use; iot.eclipse.org
 
 ----------------------------
+
+For r120:
 Config menu e.g 
 SSID:hg566
 WPA Key:********
@@ -17,20 +19,54 @@ Sensor Delay:	10s with
 Sleep Mode:	
 
 this will update every 10 
+--------------
+for mega:
+config in controller
+-----------------------
+*go to configure device an tick upload to controller
+e.g system, %ip% etc
 
-
-*go to device an chk upload to controller
 
 
 ------------------------------
-topic structure: /<espname>/<task name>/<value name>;  e.g refer espmenu: /kkesp01/swgpio 0/Switch  (under device; edit)
 
+topic structure: /<espname>/<task name>/<value name>;  e.g refer espmenu: /kkesp01/swgpio 0/Switch  (under device; edit)
+------------------------------------
 mqtt topic viewer: https://www.hivemq.com/mqtt-toolbox ; e.g mqttbox, chrome extension
 use node red: https://diyprojects.io/esp-easy-mqtt-node-red-bi-directional-communication-dashboard/#.WxRz2O6FN0w
 
 ------------------------------------------
+to use commands with mqtt:
 
+set the "Topic" entry of the MQTT node to... /<node_name>/cmd
 
+e.g. /wemos22/cmd
+
+Depending on how you have configured your ESP8266 you may or maynot need the first forward "slash".
+
+The MQTT node was driven from a Function node which setup the payload.
+
+e.g. msg.payload = "oled,0,0,fred";
+
+return msg;
+
+The 0 and 0 are the row and column parameters for the OLED.
+
+Fred is just a piece of text.
+
+If you wanted to send a value then use...
+
+msg.payload = "oled, 0,0" + name_of_variable;
+
+return msg;
+
+---------------------
+
+You could put all the settings in the Function node and leave the MQTT node empty (apart from the MQTT server setting).
+e.g.
+msg.topic = "/wemos22/cmd";
+msg.payload="oled,0,0,hello world";
+return msg;
 video to connect to mqtt: https://www.youtube.com/watch?v=8CuD6YBdACs&feature=youtu.be
 
 ------------------------
