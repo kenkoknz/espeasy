@@ -74,16 +74,27 @@ msg.payload="oled,0,0,hello world";
 return msg;
 video to connect to mqtt: https://www.youtube.com/watch?v=8CuD6YBdACs&feature=youtu.be
 ------------------------------------------------
-*****control esp with mqtt  ie publish***** 
+*********************control esp with mqtt  ie publish****************** 
 
 e.g: to turn gpio 1 on or off; 
 
 publish topic:  /kkesp01/cmd with message: gpio,1,0
 
+to turn sonoff on
+publish topic: /kksonoff1/cmd with message: gpio,12,1
 
 e.g to send msg to oled; \
 
 /kkwemos2/cmd/  with msg payload: oled,3,1,hello kk 
+
+or
+
+publish topic: /kksonoff1/gpio/12 with pay load 1
+
+
+
+
+
 
 ------------------------
 
