@@ -5,6 +5,20 @@ flashed with mega 20180625; nornal 1024 bin
 sonoff pins 1, 2, 3, 4, 5,    3.3v rx, tx, nd, pio14
 
 
+ESP8266 sonoff pin usage
 
+ESP8266 Pin 	Function 	GPIO 	Connected to
+
+9 – MTMS 	GPIO 	GPIO14 	J1 Pin 5
+
+10 – MTDI 	GPIO 	GPIO12 	Relay (HIGH to turn on)
+
+12 – MTCK 	GPIO 	GPIO13 	LED (LOW to turn on)
+
+15 – GPIO0 	Flash 	GPIO0 	Tactile switch (LOW when switch is pressed)
+
+25 – RDX 	UART RXD 	GPIO3 	J1 Pin 2
+
+26 – TXD 	UART TXD 	GPIO1 	J1 Pin 3
 
 
