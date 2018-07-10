@@ -1,0 +1,53 @@
+
+Accounts required: io.adafruit.com;  ifttt;
+
+platform: espeasy; sonoff or esp hw; ifttt; io.adafruit.com (mqttt)
+----------------
+
+1. flash sonoff with espeasy mega
+
+2. sonoff hw: 
+
+relay gpio12 
+
+led gpio13
+
+sw gpio0
+
+
+espeasy setup setup:
+controllers:
+io.adafruit.com
+user: kenkoknz1
+pw: aoi
+
+subscribe feed: kenkoknz1/feeds/# 
+
+publish feed: e.g kenkoknz1/feeds/%tskname%%valname%        create a feed temp1temp
+
+ie kenkok/feeds/temp1/temp
+
+
+
+----
+pulish template:
+kenkoknz1/feeds/%tskname%%valname%        create a feed temp1temp
+
+ie kenkok/feeds/temp1/temp
+
+
+
+subscribe:
+kenkoknz1/feeds/#                       e.g create a feed cmd;   send mqtt: kenkoknz1/feeds/cmd with payload gpio,12,1
+
+
+------------------------------
+
+
+
+
+
+
+
+
+
