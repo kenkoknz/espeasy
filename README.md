@@ -1,6 +1,6 @@
 # espeasy
 
-guide: https://www.letscontrolit.com/wiki/index.php/Basics,Tutorials_%26_Howto%27s#KIS_-_Keep_It_Simple.21
+Guide: https://www.letscontrolit.com/wiki/index.php/Basics,Tutorials_%26_Howto%27s#KIS_-_Keep_It_Simple.21
 
 https://diyprojects.io/esp-easy-firmware-esp8266-create-connected-objects-smarthome-without-programming/#.WxPU9u6FN0w
 
@@ -13,6 +13,8 @@ If your dealer offers ESP-01 with a blue PCB - do not buy! These have only 512KB
 The newer ESP-01 with a black PCB have 1MB flash, they can run with ESPEasy-2.x, but 4mb is reccomended for espeasy 2.x.
 
 --------------------------------------------------------------------
+ESPEASY:
+
 install espeasy:https://www.letscontrolit.com/wiki/index.php/Tutorial_ESPEasy_Firmware_Upload
 
 Flashing the module
@@ -60,7 +62,7 @@ Change name "Newdevice" to a unique name
 
 
 -----------------------
-Notes on pin convention; esp uses eg d1 and d2; ard uses gpio;
+Notes on pin convention; esp uses eg d1 and d2; ard uses gpio, when using ide or espeasy  use gpio convention;
 
 eg fo wemos oledshield
 
@@ -73,10 +75,8 @@ eg D0 = gpio16
 
 Pin	Function	ESP-8266 Pin
 
-TX	TXD	TXD
-
-RX	RXD	RXD
-
+TX	TXD	=gpio 1
+RX	RXD =gpio 3 
 A0	Analog input, max 3.3V input	A0
 
 D0	IO	GPIO16
