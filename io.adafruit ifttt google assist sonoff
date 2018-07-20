@@ -4,9 +4,12 @@ Accounts required: io.adafruit.com;  ifttt;
 platform: espeasy; sonoff or esp hw; ifttt; io.adafruit.com (mqttt)
 ----------------
 
-1. flash sonoff with espeasy mega
+1. flash sonoff with espeasy mega:
+
+So far sonoff works good with mega, is great as we can have 2 wifi credentials.
 
 2. sonoff hw: 
+The hw pins are:
 
 relay gpio12 
 
@@ -14,16 +17,18 @@ led gpio13
 
 sw gpio0
 
+-----------------------------
+espeasy side:
 
-espeasy setup setup:
-controllers:
+espeasy setup setup: With mega, you can set more that one controllers, however only one instance of mqtt. 
+Controller setup:
 io.adafruit.com
 user: kenkoknz1
-pw: aoi
+pw: aoi copy frm adafruin account
 
-subscribe feed: kenkoknz1/feeds/# 
+subscribe feed, here the sonoff listens for topics : kenkoknz1/feeds/# 
 
-publish feed: e.g kenkoknz1/feeds/%tskname%%valname%        create a feed temp1temp
+publish feed, here the sonoff will publish devices info to adafruit.io: e.g kenkoknz1/feeds/%tskname%%valname%        create a feed temp1temp
 
 ie kenkok/feeds/temp1/temp
 
@@ -31,7 +36,7 @@ ie kenkok/feeds/temp1/temp
 
 ----
 pulish template:
-kenkoknz1/feeds/%tskname%%valname%        create a feed temp1temp
+kenkoknz1/feeds/%tskname%%valname%       e.g. create a feed temp1temp, this would send say gpio0 to adafruit.io
 
 ie kenkok/feeds/temp1/temp
 
