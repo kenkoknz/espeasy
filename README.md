@@ -4,7 +4,7 @@ Guide: https://www.letscontrolit.com/wiki/index.php/Basics,Tutorials_%26_Howto%2
 
 https://diyprojects.io/esp-easy-firmware-esp8266-create-connected-objects-smarthome-without-programming/#.WxPU9u6FN0w
 
-board types: https://www.letscontrolit.com/wiki/index.php/Basics:_ESP8266_Types_and_Boards
+Compatible board types: https://www.letscontrolit.com/wiki/index.php/Basics:_ESP8266_Types_and_Boards
 
 There are several versions of the ESP01 on the market. They differ in pinout and memory size.
 
@@ -13,7 +13,9 @@ If your dealer offers ESP-01 with a blue PCB - do not buy! These have only 512KB
 The newer ESP-01 with a black PCB have 1MB flash, they can run with ESPEasy-2.x, but 4mb is reccomended for espeasy 2.x.
 
 --------------------------------------------------------------------
-ESPEASY:
+ESPEASY Install:
+
+As of jul18: 2 versions, r120 (smaller size, to be replaced by v2.0) and teh Mega v2.0; have tested mega on wemos and sonoff.
 
 install espeasy:https://www.letscontrolit.com/wiki/index.php/Tutorial_ESPEasy_Firmware_Upload
 
