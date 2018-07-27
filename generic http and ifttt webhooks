@@ -1,0 +1,20 @@
+Publish simple "get" http requests:
+
+Select device generic http 
+
+controller settings:
+
+ locate controller: use host name
+ host name: maker.ifttt.com
+ controller publish: trigger/switchpressed/with/key/secretkey
+
+ In device setting, I just setup up a simple switch which trigger the controller to on state change to send the http request.
+
+ notes: the "publish" field, leave out the "/", i.e just:
+ " trigger/switchpressed/with/key/secretkey" and not "/trigger/switchpressed/with/key/secretkey".
+
+Also note to leave out the "https://" in the host name field
+
+espeasy seems to handle https easily without any cert declarations etc.
+
+
