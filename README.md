@@ -12,6 +12,8 @@ If your dealer offers ESP-01 with a blue PCB - do not buy! These have only 512KB
 
 The newer ESP-01 with a black PCB have 1MB flash, they can run with ESPEasy-2.x, but 4mb is reccomended for espeasy 2.x.
 
+https://www.letscontrolit.com/wiki/index.php/Configuration  pin usage
+
 --------------------------------------------------------------------
 ESPEASY Install:
 
