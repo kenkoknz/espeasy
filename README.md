@@ -6,6 +6,10 @@ https://diyprojects.io/esp-easy-firmware-esp8266-create-connected-objects-smarth
 
 Compatible board types: https://www.letscontrolit.com/wiki/index.php/Basics:_ESP8266_Types_and_Boards
 
+vid for sonoff: https://www.youtube.com/watch?time_continue=662&v=_LeUUkYNgA4
+
+
+
 There are several versions of the ESP01 on the market. They differ in pinout and memory size.
 
 If your dealer offers ESP-01 with a blue PCB - do not buy! These have only 512KB of flash ram which is too low for ESPEasy-2.x.
